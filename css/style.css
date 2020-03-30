@@ -1,0 +1,700 @@
+/*AHMET ASLAN PORTFOLIO CSS */
+
+html, body, div,span ,applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	height: 100%;
+	line-height: 1;
+	background: url(../images/ahmetaslanportfoli\ background.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow-x: hidden;
+	font-family: 'Acme', sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: center;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*START HEADER STYLE*/
+header{
+	display: inline-block;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 51px;
+	background: rgb(1,0,255);
+	background: linear-gradient(90deg, rgba(15,0,255,1) 0%, rgba(255,255,255,1) 52%, rgba(0,212,255,1) 100%);
+	animation-delay: 1s;
+	opacity: 0.9;
+}
+.container{
+	width: 100%;
+	height: auto;
+}
+
+header ul{
+	line-height: 60px;
+	display: flex;
+}
+header ul li{
+	flex: 1;
+	text-align: center;
+}
+header ul li a{
+	color: black;
+	text-decoration: none;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-family: 'Spicy Rice', cursive;
+}
+header ul li a.current{
+	color: green;
+	
+}
+header ul li a:hover
+{
+	opacity: 1;
+	color: orangered;
+	font-weight: bold;
+}
+
+/*END HEADER STYLE*/
+
+/*START HEADING STYLE*/
+
+.intro-heading{
+	text-align: center;
+}
+.intro-heading h3{
+	margin-top: -300px;
+	font-size: 25px;
+	font-family: 'Finger Paint', cursive;
+	text-transform: uppercase;
+	color:#fff;
+	animation-delay: 5s;
+	position: relative;
+}
+.intro-heading h1{
+	position: relative;
+	margin-top: -750px;
+	font-size: 70px;
+	font-weight: 300;
+	font-family: 'Finger Paint', cursive;
+	text-transform: uppercase;
+	color: #fff;
+	animation-delay: 3s;
+}
+
+/*END HEADING STYLE*/
+
+/*START ABOUT PAGE*/
+
+.about{
+	background-image: url("/images/about.jpg");
+	background-size: cover;
+	opacity: 0.8;
+	width: 100%;
+	height: 100vh;
+	word-wrap: break-word;
+	text-align: center;
+
+}
+.about > h3{
+	padding-top: 6%;
+	position: relative;
+	margin-top:20%;
+	color: gold;
+	font-family: 'Press Start 2P', cursive;
+	background: rgb(86,80,217);
+	background: linear-gradient(90deg, rgba(86,80,217,1) 0%, rgba(0,125,120,1) 55%, rgba(0,170,255,1) 100%);
+
+	text-align: center;
+	font-size: 30px;
+	opacity: 1;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(255,255,255,0.2);
+	padding-bottom: 8px;
+	margin-bottom: 12px;
+	animation-delay: 6s;
+	text-align: center;
+}
+.about > p{
+	padding: 12px;
+	opacity: 1;
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+	margin-top:1%;
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: 900;
+	animation-delay: 7s;
+}
+
+/*END ABOUT PAGE*/
+
+/*START SERVICES PAGE*/
+
+.services{
+	padding-top: 7%;
+	width: 100%;
+	height: 100vh;
+	margin-bottom:0%;
+	text-align: center;
+}
+.services h3{
+	font-size: 30px;
+	color: #fff;
+	font-weight: bolder;
+	padding: 0 50px;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid #fff;
+	border-radius: 45px;
+	margin-bottom: 25px;
+	display: inline-block;
+	text-align: center;
+}
+/*END SERVICES AREA*/
+
+/*START LANGUAGES PAGE*/
+.languages{
+	padding-top: 6%;
+	width: 100%;
+	height: 100vh;
+	margin-top: 10%;
+	text-align: center;
+	
+}
+.figure{
+	display: inline-block;
+	width: 29%;
+	position: relative;
+	margin-bottom: 5px;
+	overflow: hidden;
+	transition: width 2s, height 2s, transform 2s;
+	text-align: center;
+}
+.figure :hover {
+	width: 42%;
+	height: 33%;
+	transform: rotate(5deg);
+	text-align: center;
+  }
+.figure img{
+	width: 40%;
+	height: 30%;
+	display: inline-block;
+	text-align: center;
+	
+}
+
+.figure:nth-child(3n+2){
+	margin: 0 6%;
+	text-align: center;
+}
+.figure h3{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	padding: 0 10px;
+	font-weight: bolder;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+}
+/*END LANGUAGES PAGE*/
+
+/*START PROJECT AREA*/ 
+.button-group{
+	text-transform: uppercase;
+	letter-spacing: 3px;;
+	margin-bottom: 3%;
+	align-items: center;
+}
+#project-area{
+	width: 100%;
+	height: auto;
+}
+.project-area > .container {
+	margin-top: 1%;
+}
+
+.site-main .project-area{
+	padding: 4rem 0;
+	text-align: center;	
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+	text-transform: uppercase;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+}
+
+.site-main .project-area .button-group button + button{
+	padding-left: 5rem;
+	text-align: center;
+	
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+	margin-top:20px;
+	font: normal 700 25px/12px var(--roboto);
+	font-weight: bolder;
+	color: orangered;
+	text-align: center;
+}
+.our-project >.img{
+	width: 300px;
+	height: 250;
+	border: silver 5px solid;
+	border-radius: 4%;
+	display: table-cell;
+	text-align: center;
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+	filter: brightness(1.1) drop-shadow(5px 8px 30px #b1afaf);
+	box-shadow: aqua;
+	text-align: center;
+}
+
+
+.project-title {
+	margin-top:0%;
+	text-align: center;
+	color: snow;
+	letter-spacing: 1.1rem;
+	text-shadow: 5px 7px 3px #000000;
+	text-align: center;
+}
+
+
+/*END PROJECT AREA*/ 
+
+
+/*START CONTACT PAGE*/
+
+.contact{
+	padding-top: 5%;
+	background-image: url("/images/contact-us.jpg");
+	background-repeat: no-repeat;
+	width: 60%;
+	height: 50vh;
+	margin: 0 auto;
+	margin-top: 10%;
+	text-align: center;
+}
+.contact h2{
+	font-size: 24px;
+	font-weight: 900;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+input,textarea{
+	font-family: open sans;
+	box-sizing: border-box;
+}
+.textField, .messageField{
+	width: 100%;
+	height: 45px;
+	border: 2px solid #ffffff30;
+	background-color: transparent;
+	color: #ffffff;
+	padding: 0 10px;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.messageField{
+	max-width: 100%;
+	min-height: 130px;
+	padding: 10px;
+}
+.textField:focus, .messageField:focus{
+	border-color: #ffffff;
+}
+.submitButton{
+	width: 100%;
+	height: 45px;
+	background-color: #ffffff;
+	color: lime;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 20px;
+	border: 2px solid #ffffff;
+}
+.submitButton:hover
+{
+	opacity: 1;
+	color:red;
+}
+
+/*END CONTACT PAGE*/
+
+/*START MENU BUTTON*/
+.toggleBtn{
+	background-color: #ff4da6;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 5px 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: none;
+	text-align: center;
+}
+
+/*END MENU BUTTON*/
+
+/*START FOOTER*/ 
+
+footer.footer-area{
+    padding: 3rem 0;
+	background: url(../images//footer-bg.png) no-repeat;
+	opacity: 0.8;
+	width: 100%;
+	height:420px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bolder;
+	color: #e60073;
+	font-size: 16pt;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+footer.footer-area .social h5{
+	font: normal 500 33px/ 40px var(--roboto);
+	text-align: center;
+}
+
+footer.footer-area .social a > i{
+    font-size:50px;
+    padding: 1rem;
+	color: var(--border-color);
+	text-align: center;
+}
+
+footer.footer-area .social a:hover > i{
+	color: var(--primary-color);
+	text-align: center;
+}
+
+/*END FOOTER*/ 
+
+/*START SMALL DEVICE RESPONSIVENESS*/
+@media (max-width: 576px) {
+	body{
+		background-size: cover;
+		background-position: center;
+		text-align: center;
+	}
+	.toggleBtn{
+		display: block;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	header{
+		height: auto;
+		display: none;
+	}
+	header ul, header ul li, header ul li a{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: auto;
+    	text-align: center;
+    	transition: all .5s;
+	}
+	header ul li a:hover{
+		color: orangered;
+	}
+	header ul li{
+		flex: none;
+	}
+	.intro-heading{
+		margin-top: 70%;
+	}
+	.intro-heading h4{
+		
+		font-size: 15px;
+	}
+	.intro-heading h1{
+		font-size: 15px;
+	}
+
+	.about{
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		text-align: center;
+	}
+	.about > p{
+		width: 100%;
+		height: auto;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+	.about > h3{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.services{
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		text-align: center;
+		
+	}
+	.languages{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+
+	}
+	.button-group{
+		display: block;
+		position: relative;
+		text-align: center;
+	}
+	.figure{
+		width: 50%;
+		height: auto;
+		margin-bottom: 0px;
+	}
+	.figure:nth-child(3n+2){
+		margin: 0 0 20px;
+	}
+
+	.contact{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.footer {
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.site-main .project-area{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.video{
+		width: 100%;
+		text-align: center;
+	}
+	#slideshow > div {
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+}
+
+/*END SMALL DEVICE RESPONSIVENESS*/
+
+/*START HEADER VIDEO*/
+
+section > .name{
+	height: 100vh;
+	width: 100%;
+	background:#fff;
+	font-size: xx-large ;
+}
+.video{
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	opacity: 0.8;
+}
+
+/*END HEADER VIDEO*/
+
+/*=====START GLOW=====*/
+
+.container > ul #glowname > .glow {
+	font-size: 28px;
+	font-family: 'Pacifico', cursive;
+	margin-top: 10px;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  }
+/*=====END GLOW=====*/
+
+/*=====START SCROLL BAR=====*/
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+    width: 14px;
+}
+ 
+/*TRACK*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(30, 235, 194, 1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(30, 235, 194, 1); 
+}
+/*=====END SCROLL BAR=====*/
+
+/*=====START GO TO TOP=====*/
+
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: skyblue;
+	bottom: 16px;
+	right: 40px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-size: 22px;
+  }
+  .gotopbtn:hover {opacity: 1}
+
+ /*=====END GO TO TOP=====*/
+
+ /*===== START ANIMATED 'AHMET ASLAN'=====*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.title {
+	margin-top: 0px;
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	letter-spacing: 2px;
+}
+
+.ani {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	opacity: 1;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+/*STYLING MY BUTTON*/
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+/*=====END ANIMATED 'AHMET ASLAN'=====*/
+
+/*QUETOES AREA*/
+
+#slideshow {
+  margin: 5px auto;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.4);
+}
+
